@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <header>
+  <header id="hide-header">
    <div class="contain">     
      <div class="row">
       <div class="col-md-4 d-flex xs-center" data-aos="fade-down-right" data-aos-duration="3000">
@@ -65,5 +65,17 @@
      <script type="text/javascript">
          AOS.init();
      </script>
+     <script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("hide-header").style.top = "0";
+  } else {
+    document.getElementById("hide-header").style.top = "-80px"; /* adjust this value to the height of your header */
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
 </body>
 </html>
