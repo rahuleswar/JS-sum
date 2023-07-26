@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Temperature and display</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		  //----------  read temperature and display a suitable message according to temperature state below. Temp < 0 then Freezing weather Temp 0-10 then Very Cold weather Temp 10-20 then Cold weather Temp 20-30 then Normal in Temp Temp 30-40 then Its Hot Temp >=40 then Its Very Hot ----------//
+
+
+              let temp=parseInt(prompt("Enter the temperature :"));
+
+
+                   document.write("Entered temperature is :",temp,"<br>");
+                   document.write("<br>");
+
+
+              if (temp < 0){
+
+                   document.write("Freezing weather.So,sry U R Died :(");
+
+              }
+              else if ((temp >= 0)&&(temp <= 10)) {
+
+                   document.write("Very Cold weather keep safe");
+              } 
+              else if ((temp >= 10)&&(temp <= 20)) {
+
+                   document.write("Cold weather get the sweater");
+              }
+              else if ((temp >= 20)&&(temp <= 30)) {
+
+                   document.write("Normal Temperature :) Keep it ");
+              }
+              else if ((temp >= 30)&&(temp <= 40)) {
+
+                   document.write("Its Hot Go safe ^_^");
+              }
+              else if (temp >= 40) {
+
+                   document.write("Its Very Hot Go to the Normal place *_* ");
+              }
+
+              else{
+
+                   document.write("Something Wrong :/");
+
+              }
+              
+ 
+
+	</script>
+
+</body>
+</html>
