@@ -112,7 +112,7 @@ li a:hover {
 
 @media (max-width:576px){
   body{
-    background-position: 90rem;
+    background-position: 41rem;
   }
   header .list{
     visibility: hidden;
